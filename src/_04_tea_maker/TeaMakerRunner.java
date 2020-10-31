@@ -4,9 +4,13 @@ public class TeaMakerRunner {
 
 	public static void main(String[]args) {
 	TeaBag bill = new TeaBag("Chamomile");
-	JOptionPane.showMessageDialog(null, "hi");
+	Kettle bob = new Kettle();
+	Cup joe = new Cup();
 	
-	
+	bill.getFlavor();
+	bob.getWater();
+	bob.boil();
+	joe.makeTea(bill, bob.getWater());
 	
 	}
 }
