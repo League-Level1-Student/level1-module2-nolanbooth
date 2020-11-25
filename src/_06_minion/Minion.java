@@ -28,7 +28,13 @@ public Minion(String name, int eyes, String color, String master)
 	this.eyes = eyes;
 	this.color = color;
 	this.master = master;
-} 
+}
+public String getMaster() {
+	return master;
+}
+public void setMaster(String newMaster) {
+	this.master = newMaster;
+}
 String getName() {
 	return name;
 }
